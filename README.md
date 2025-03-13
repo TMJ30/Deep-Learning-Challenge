@@ -38,9 +38,9 @@ How many neurons, layers, and activation functions did you select for your neura
 * To increase model perforamnce, I created a function that automcatically runs through each possible hidden layer, units, and activitation combination possible. It then generates the best hyperparamters for the model (see borrowed code section).
 
 
-
 ## **Summary**
 
+After optimizing the model, the overall accuracy score continued to be in the same range with a slight increase of .0028. This indicates that the neural network model is correctly predicting the outcomes approximately 73% of the time on the test dataset
 
 ## **Borrowed Code**
 
