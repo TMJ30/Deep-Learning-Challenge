@@ -27,7 +27,11 @@ The nonprofit organization, Alphabet Soup, wanted a tool that can help it select
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
 * The model was optimized with the following hyperparameters:
     * Activation: tanh
-    * 
+    * Number of hidden layers: 4
+    * First layer units: 37
+    * Units in hidden layers(in order): 7, 27, 9, 5
+    * Number of epochs: 20
+    * Initial epoch: 7
 *
 * It produced a slightly higher accuracy rating than the previous model. When running the auto tuner, it gave those numbers and activation with the highest accuracy
 Were you able to achieve the target model performance?
