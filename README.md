@@ -9,7 +9,7 @@ The nonprofit organization, Alphabet Soup, wanted a tool that can help it select
 
 Data Processing:
 
-*The target variable the  model was ***IS_SUCCESSFUL*** column (indicates if the money was used effectively or not)
+* The target variable the  model was ***IS_SUCCESSFUL*** column (indicates if the money was used effectively or not)
 
 
 ## **Summary**
