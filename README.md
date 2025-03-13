@@ -10,6 +10,17 @@ The nonprofit organization, Alphabet Soup, wanted a tool that can help it select
 Data Processing:
 
 * The target variable the  model was ***IS_SUCCESSFUL*** column (indicates if the money was used effectively or not)
+* Features used to compile the model:
+   * Application type
+   * Affiliation - Sector of industry
+   * Classification - Government organization classification
+   * Use Case - Reason for funding
+   * Organization - Organization Type
+   * Status
+   * Income Amount
+   * Special Considerations
+   * Ask Amount
+
 
 
 ## **Summary**
