@@ -32,12 +32,10 @@ How many neurons, layers, and activation functions did you select for your neura
     * Units in hidden layers(in order): 7, 27, 9, 5
     * Number of epochs: 20
     * Initial epoch: 7
-*
-* It produced a slightly higher accuracy rating than the previous model. When running the auto tuner, it gave those numbers and activation with the highest accuracy
-Were you able to achieve the target model performance?
-	No
-What steps did you take in your attempts to increase model performance?
-Ran an auto tuner…explain what auto tuner is
+      
+* Unforunately the model was not able to reach the target performance of 75% 
+
+* To increase model perforamnce, I created a function that automcatically runs through each possible hidden layer, units, and activitation combination possible. It then generates the best hyperparamters for the model (see borrowed code section).
 
 
 
