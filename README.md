@@ -20,6 +20,7 @@ Data Processing:
    * Income Amount
    * Special Considerations
    * Ask Amount
+ * Variables that were removed from input data were the identification columns (EIN and Name columns) because they add no value to the model
 
 
 
