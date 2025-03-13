@@ -22,6 +22,19 @@ The nonprofit organization, Alphabet Soup, wanted a tool that can help it select
    * Ask Amount
  * Variables that were removed from input data were the identification columns (EIN and Name columns) because they are neither possible features or target variables
 
+*Compiling, Training, and Evaluating the Model*
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+* The model was optimized with the following hyperparameters:
+    * Activation: tanh
+    * 
+*
+* It produced a slightly higher accuracy rating than the previous model. When running the auto tuner, it gave those numbers and activation with the highest accuracy
+Were you able to achieve the target model performance?
+	No
+What steps did you take in your attempts to increase model performance?
+Ran an auto tuner…explain what auto tuner is
+
 
 
 ## **Summary**
