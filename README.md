@@ -35,8 +35,17 @@ The dataset includes the following key features:
   * **Units in hidden layers:** 7 → 27 → 9 → 5
   * **Number of epochs:** 20
   * **Initial epoch:** 7
+* Added a callback to save model weights every 5 epochs
+* Evaluated the model on the testing data (loss and accuracy)
+
+**Step 3: Optimize the Model**
+* Attempted to improve performance using hyperparameter tuning:
+  * Created a function to automatically iterate through possible hidden layers, units, and activation functions
+  * Generated the best hyperparameters for the model
+* **Reuslts:** Model accuracy slightly increased by 0.0028, achieving ~73% accuracy on the test set
+* The target accuracy of 75% was not achieved
       
-* Unforunately the model was not able to reach the target performance of 75% 
+
 
 * To increase model perforamnce, I created a function that automcatically runs through each possible hidden layer, units, and activitation combination possible. It then generates the best hyperparamters for the model (see borrowed code section).
 
