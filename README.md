@@ -1,11 +1,26 @@
-# Deep-Learning-Challenge
+# Alphabet Soup Charity Success Prediction
 
+## Overview
 
-## **Overview**
+Alphabet Soup, a nonprofit foundation, wants a tool to identify applications with the highest chance of success in their ventures. Using historical funding data for over 34,000 organization, this project develops a binary classification model to predict whether an applicant will be successful if funded.
 
-The nonprofit organization, Alphabet Soup, wanted a tool that can help it select applicants for funding with the best chance of success in their ventures. The purpose of the analysis was to create a binary classifier that could predict whether applicants will be successful if funded by Alphabet Soup. 
+The dataset includes the following key features:
+* **EIN and NAME**—Identification columns
+* **APPLICATION_TYPE**—Alphabet Soup application type
+* **AFFILIATION**—Affiliated sector of industry
+* **CLASSIFICATION**—Government organization classification
+* **USE_CASE**—Use case for funding
+* **ORGANIZATION**—Organization type
+* **STATUS**—Active status
+* **INCOME_AMT**—Income classification
+* **SPECIAL_CONSIDERATIONS**—Special considerations for application
+* **ASK_AMT**—Funding amount requested
+* **IS_SUCCESSFUL**—Was the money used effectively
 
-## **Results**
+## Project Workflow
+**Step 1: Preprocess the Data**
+* Target: `IS_SUCCESSFUL`
+* Features: `APPLICATION_TYPE`, `AFFILIATION`, `CLASSIFICATION`, `USE_CASE`, `ORGANIZATION`, `STATUS`, `INCOME_AMT`, `SPECIAL_CONSIDERATIONS`, `ASK_AMT`
 
 *Data Processing:*
 
