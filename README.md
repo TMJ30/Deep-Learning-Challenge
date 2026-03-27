@@ -27,31 +27,14 @@ The dataset includes the following key features:
 * Split the data into training and testing sets using `train_test_split`
 * Scaled features using `StandardScaler()`
 
-*Data Processing:*
-
-* The target variable the  model was ***IS_SUCCESSFUL*** column (indicates if the money was used effectively or not)
-* Features used to compile the model:
-   * Application type
-   * Affiliation - Sector of industry
-   * Classification - Government organization classification
-   * Use Case - Reason for funding
-   * Organization - Organization Type
-   * Status
-   * Income Amount
-   * Special Considerations
-   * Ask Amount
- * Variables that were removed from input data were the identification columns (EIN and Name columns) because they are neither possible features or target variables
-
-*Compiling, Training, and Evaluating the Model*
-
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-* The model was optimized with the following hyperparameters:
-    * Activation: tanh
-    * Number of hidden layers: 4
-    * First layer units: 37
-    * Units in hidden layers(in order): 7, 27, 9, 5
-    * Number of epochs: 20
-    * Initial epoch: 7
+**Step 2: Compile, Train, and Evaluate the Model**
+* Designed a neural network with TensorFlow/Keras
+* Optimized hyperparameters:
+  * **Activation function:** `tanh`
+  * **Number of hidden layers:** 4
+  * **Units in hidden layers:** 7 → 27 → 9 → 5
+  * **Number of epochs:** 20
+  * **Initial epoch:** 7
       
 * Unforunately the model was not able to reach the target performance of 75% 
 
