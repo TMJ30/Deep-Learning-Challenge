@@ -21,6 +21,11 @@ The dataset includes the following key features:
 **Step 1: Preprocess the Data**
 * Target: `IS_SUCCESSFUL`
 * Features: `APPLICATION_TYPE`, `AFFILIATION`, `CLASSIFICATION`, `USE_CASE`, `ORGANIZATION`, `STATUS`, `INCOME_AMT`, `SPECIAL_CONSIDERATIONS`, `ASK_AMT`
+* Removed irrelevant columns: `EIN`, `NAME`
+* Combined rare categorical values into `OTHER`
+* Encoded categorical variables using `pd.get_dummies()`
+* Split the data into training and testing sets using `train_test_split`
+* Scaled features using `StandardScaler()`
 
 *Data Processing:*
 
