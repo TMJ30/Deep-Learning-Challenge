@@ -44,44 +44,10 @@ The dataset includes the following key features:
   * Generated the best hyperparameters for the model
 * **Reuslts:** Model accuracy slightly increased by 0.0028, achieving ~73% accuracy on the test set
 * The target accuracy of 75% was not achieved
-      
+
+## Summary
+* The neural network is correctly predicting funding outcomes approximately73% of the time
+* The model effectively identifies successful applications but did not reach the 75% target accuracy
+* **Recommendation:** Consider alternative classification models (e.g., Random Forest) or improve feautres to boost predictive performance
 
 
-* To increase model perforamnce, I created a function that automcatically runs through each possible hidden layer, units, and activitation combination possible. It then generates the best hyperparamters for the model (see borrowed code section).
-
-
-## **Summary**
-
-After optimizing the model, the overall accuracy score continued to be in the same range with a slight increase of .0028. This indicates that the neural network model is correctly predicting the outcomes approximately 73% of the time on the test dataset
-
-## **Borrowed Code**
-
-The code below was borrowed from a class session showing how to create and find the best hyperparameters for the nerual networks model automatically.
-        
-        def create_model(hp): # Function used to run through every possible hidden layer and activiation combination possible
-            nn = tf.keras.models.Sequential()
-            number_of_features = len(X_train.columns)  # Number of columns in the dataset; This works if X_train is a DataFrame
-            hidden_layer1 = 80
-            hidden_layer2 = 30
-            activation = hp.Choice('activation',['relu','tanh','sigmoid'])
-            
-            nn.add(tf.keras.layers.Dense(units=hp.Int('first_units',
-                                              min_value=1,
-                                              max_value=80,
-                                              step=2),
-                                 activation=activation,
-                                 input_dim=number_of_features)) # Created to find most optimial first hidden layer
-
-            for i in range(hp.Int('num_layers', 1, 6)):
-                nn.add(tf.keras.layers.Dense(units=hp.Int('units_' + str(i),
-                                                          min_value=1,
-                                                          max_value=30,
-                                                          step=2),
-                                             activation=activation)) #Create to find most optimial second hidden layer
-
-            nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
-
-            nn.compile(loss = 'binary_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
-
-            return nn
-            
